@@ -5,7 +5,7 @@ def caesar_cipher_encrypt(text, shift):
             base = ord('A') if char.isupper() else ord('a')
             encrypted_text += chr((ord(char) - base + shift) % 26 + base)
         else:
-            encrypted_text += char  # Keep punctuation and spaces unchanged
+            encrypted_text += char
     return encrypted_text
 
 def caesar_cipher_decrypt(text, shift):
